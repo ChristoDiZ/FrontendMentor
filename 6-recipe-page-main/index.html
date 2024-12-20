@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Recipe page</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex flex-col min-h-screen bg-[hsl(29,53%,90%)]">
+  <main >
+   <div class="sm:container sm:mx-auto sm:w-2/4 bg-white sm:p-8 rounded-xl sm:my-8  ">
+    <div>
+      <img class="sm:rounded-xl" src="assets/images/image-omelette.jpeg" alt="Image of omelette">
+    </div>
+    <h1 class="text-2xl font-serif font-semibold pb-4 pt-6">Simple Omelette Recipe</h1>
+    <p class="text-xs text-zinc-500 font-semibold mb-6">
+      An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats.
+    </p>
+
+    <!-- Preparation -->
+    <div class="bg-fuchsia-50 rounded-lg">
+      <h2 class="pt-6 pl-2 font-semibold text-fuchsia-950 text-sm">Preparation time</h2>
+      <ol class="list-disc pl-7 text-xs py-2 text-zinc-500">
+        <li class="pb-1 px-2"><b>Total</b>: Approximately 10 minutes</li>
+        <li class="py-1 px-2"><b>Preparation</b>: 5 minutes</li>
+        <li class="py-1 px-2"><b>Cooking</b>: 5 minutes</li>
+    </ol>
+    </div>
+
+    <!-- Ingredients -->
+    <h2 class="font-serif font-semibold text-amber-800 mt-6 ">Ingredients</h2>
+    <ol class="list-disc pl-7 text-xs py-2 text-zinc-500 mb-6">
+      <li class="pb-1 px-2">2-3 large eggs</li>
+      <li class="pb-1 px-2">Salt, to taste</li>
+      <li class="pb-1 px-2">Pepper, to taste</li>
+      <li class="pb-1 px-2">1 tablespoon of butter or oil</li>
+      <li class="pb-1 px-2">Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+    </ol>
+
+    <!-- Instructions -->
+    <h2 class="font-serif font-semibold text-amber-800 ">Instructions</h2>
+    <ol class="list-decimal pl-7 text-xs py-2 text-zinc-500 border-b mb-4">
+      <li class="py-1 px-2"><b>Beat the eggs:</b> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
+         You can add a tablespoon of water or milk for a fluffier texture.</li>
+      <li class="py-1 px-2"><b>Heat the pan:</b> Place a non-stick frying pan over medium heat and add butter or oil.</li>
+      <li class="py-1 px-2"><b>Cook the omelette:</b> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
+         the eggs evenly coat the surface.</li>
+      <li class="py-1 px-2"><b>Add fillings (optional):</b> When the eggs begin to set at the edges but are still slightly runny in the 
+        middle, sprinkle your chosen fillings over one half of the omelette.</li>
+      <li class="py-1 px-2"><b>Fold and serve:</b> As the omelette continues to cook, carefully lift one edge and fold it over the 
+        fillings. Let it cook for another minute, then slide it onto a plate.</li>
+      <li class="py-1 px-2 mb-2"><b>Enjoy:</b> Serve hot, with additional salt and pepper if needed.</li>
+    </ol>
+
+    <!-- Nutrition -->
+    <h2 class="font-serif font-semibold text-amber-800">Nutrition</h2>
+    <p class="text-xs py-2 text-zinc-500 font-semibold">The table below shows nutritional values per serving without the additional fillings.</p>
+    <table class="table-fixed text-xs text-zinc-500 w-full">
+      <tbody>
+        <tr class="border-b grid grid-cols-2 items-center py-1">
+          <td class="pl-7">Calories</td>
+          <td class="text-amber-800 font-semibold">277kcal</td>
+        </tr>
+        <tr class="border-b grid grid-cols-2 items-center py-1">
+          <td class="pl-7">Carbs</td>
+          <td class="text-amber-800 font-semibold">0g</td>
+        </tr>
+        <tr class="border-b grid grid-cols-2 items-center py-1">
+          <td class="pl-7">Protein</td>
+          <td class="text-amber-800 font-semibold">20g</td>
+        </tr>
+        <tr class="grid grid-cols-2 items-center py-1">
+          <td class="pl-7">Fat</td>
+          <td class="text-amber-800 font-semibold">22g</td>
+        </tr>
+      </tbody>
+    </table>  
+   </div>
+    <!-- Attribution -->
+<div class="attribution w-full text-center text-xs p-4 ">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  Coded by <a href="#">Christopher Díaz</a>.
+  </main>
+</div>  
+</body>
+</html>
