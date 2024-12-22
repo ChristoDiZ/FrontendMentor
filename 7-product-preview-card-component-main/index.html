@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Product preview card component</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="flex items-center justify-center min-h-screen bg-[hsl(26,40%,92%)]"
+  >
+    <main
+      class="bg-white rounded-lg shadow-lg max-w-sm sm:max-w-lg grid grid-cols-1 sm:grid-cols-2"
+    >
+      <!-- Imagen -->
+      <div>
+        <!-- Imagen principal cambia según resolución -->
+        <picture>
+          <!-- Imagen para pantallas pequeñas -->
+          <source
+            srcset="images/image-product-mobile.jpg"
+            media="(max-width: 639px)"
+          />
+          <!-- Imagen para pantallas medianas o mayores -->
+          <img
+            class="rounded-t-lg sm:rounded-l-lg sm:rounded-tr-none w-full h-full"
+            src="images/image-product-desktop.jpg"
+            alt="Perfume"
+          />
+        </picture>
+      </div>
+
+      <!-- Contenido -->
+      <div class="p-6 flex flex-col justify-between">
+        <h2
+          class="text-xs text-zinc-500 font-mono uppercase tracking-wide whitespace-pre-wrap"
+        >
+          P e r f u m e
+        </h2>
+        <h1
+          class="text-2xl font-serif font-bold text-zinc-800 leading-6 mt-3 whitespace-pre-wrap"
+        >
+          Gabrielle Essence Eau De Parfum
+        </h1>
+        <p class="text-sm text-zinc-500 leading-relaxed mt-4 font-semibold">
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </p>
+        <div class="flex items-center mt-5">
+          <span class="text-green-700 text-2xl font-bold font-serif"
+            >$149.99</span
+          >
+          <span class="text-zinc-500 text-sm line-through ml-4 font-semibold"
+            >$169.99</span
+          >
+        </div>
+        <button
+          class="mt-6 flex items-center justify-center bg-green-700 text-white text-sm font-semibold py-3 px-4 rounded-lg hover:bg-green-800 transition"
+        >
+          <img
+            src="images/icon-cart.svg"
+            alt="Cart Icon"
+            class="w-4 h-4 mr-2"
+          />
+          Add to Cart
+        </button>
+      </div>
+    </main>
+
+    <!-- FrontendMentor -->
+    <div class="absolute bottom-4 md:visible invisible text-xs text-center">
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        class="text-blue-600"
+        >Frontend Mentor</a
+      >. Coded by <a href="#" class="text-blue-600">Christopher Díaz</a>.
+    </div>
+  </body>
+</html>
