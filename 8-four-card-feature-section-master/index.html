@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Frontend Mentor | Four card feature section</title>
+  </head>
+  <body class="bg-slate-100">
+    <main class="container mx-auto py-10">
+      <div class="text-center">
+        <h2 class="md:text-3xl text-2xl text-gray-500">
+          Reliable, efficient delivery
+        </h2>
+        <h1 class="md:text-3xl text-2xl font-semibold tracking-wide">
+          Powered by Technology
+        </h1>
+        <div class="w-96 text-center mx-auto">
+          <p class="text-gray-400 mt-4 text-xs">
+            Our Artificial Intelligence powered tools use millions of project
+            data points to ensure that your project is successful
+          </p>
+        </div>
+      </div>
+      <!-- Tarjetas -->
+      <div class="flex md:flex-row flex-col justify-center items-center mt-10">
+        <!-- Columna 1 -->
+        <div
+          class="bg-white border-t-4 border-teal-400 rounded-md p-4 shadow-lg flex-shrink-0 w-72 h-44 my-5"
+        >
+          <h3 class="font-semibold pb-1">Supervisor</h3>
+          <p class="text-xs text-gray-400 mr-4">
+            Monitors activity to identify project roadblocks
+          </p>
+          <div class="flex justify-end pt-7">
+            <img class="size-12" src="images/icon-supervisor.svg" alt="" />
+          </div>
+        </div>
+        <!-- Columna 2 -->
+        <div class="md:flex md:flex-col">
+          <div
+            class="bg-white border-t-4 border-red-400 rounded-md p-4 mx-5 mb-5 shadow-lg w-72 h-44"
+          >
+            <h3 class="font-semibold pb-1">Team Builder</h3>
+            <p class="text-xs text-gray-400 mr-4">
+              Scans our talent network to create the optimal team for your
+              project
+            </p>
+            <div class="flex justify-end pt-7">
+              <img class="size-12" src="images/icon-team-builder.svg" alt="" />
+            </div>
+          </div>
+          <div
+            class="bg-white border-t-4 border-amber-400 rounded-md p-4 mx-5 shadow-lg w-72 h-44"
+          >
+            <h3 class="font-semibold pb-1">Karma</h3>
+            <p class="text-xs text-gray-400 mr-4">
+              Regularly evaluates our talent to ensure quality
+            </p>
+            <div class="flex justify-end pt-7">
+              <img class="size-12" src="images/icon-karma.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <!-- Columna 3 -->
+        <div
+          class="bg-white border-t-4 border-blue-400 rounded-md p-5 shadow-lg flex-shrink-0 w-72 h-44 my-5"
+        >
+          <h3 class="font-semibold pb-1">Calculator</h3>
+          <p class="text-xs text-gray-400 mr-4">
+            Uses data from past projects to provide better delivery estimates
+          </p>
+          <div class="flex justify-end pt-7">
+            <img class="size-12" src="images/icon-calculator.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer
+      class="absolute bottom-4 md:visible invisible text-xs w-full text-center"
+    >
+      <p class="text-xs text-gray-400">
+        Challenge by
+        <a
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          class="text-blue-500"
+          >Frontend Mentor</a
+        >. Coded by <a href="#" class="text-blue-500">Christopher Díaz</a>.
+      </p>
+    </footer>
+  </body>
+</html>
